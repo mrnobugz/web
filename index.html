@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELDE TECH SOLUTION - We Build Your Digital Future</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+        .text-gradient {
+            background-image: linear-gradient(45deg, #1d4ed8, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2 text-2xl font-bold text-gray-800">
+                <!-- Custom SVG Logo: Abstract E and L -->
+                <svg width="40" height="40" viewBox="0 0 100 100" class="text-blue-600">
+                    <rect x="0" y="0" width="100" height="100" fill="white" />
+                    <!-- Stylized E and L shapes -->
+                    <path d="M 20 20 L 80 20 L 80 35 M 35 35 L 35 50 L 80 50 M 35 65 L 80 65 L 80 80 M 20 80 L 50 80" fill="none" stroke="#3b82f6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <!-- Connecting line -->
+                    <path d="M 20 20 L 20 80" fill="none" stroke="#1d4ed8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="text-gradient">ELDE TECH SOLUTION</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                <li><a href="#services" class="hover:text-blue-600 transition-colors duration-300">Services</a></li>
+                <li><a href="#projects" class="hover:text-blue-600 transition-colors duration-300">Projects</a></li>
+                <li><a href="#about" class="hover:text-blue-600 transition-colors duration-300">About Us</a></li>
+                <li><a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">Contact Us</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-600">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2">
+            <ul class="flex flex-col space-y-2 text-sm font-medium">
+                <li><a href="#services" class="block py-2 hover:bg-gray-100 rounded-md transition-colors duration-300">Services</a></li>
+                <li><a href="#projects" class="block py-2 hover:bg-gray-100 rounded-md transition-colors duration-300">Projects</a></li>
+                <li><a href="#about" class="block py-2 hover:bg-gray-100 rounded-md transition-colors duration-300">About Us</a></li>
+                <li><a href="#contact" class="block py-2 hover:bg-gray-100 rounded-md transition-colors duration-300">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                Your <span class="text-gradient">Digital Success</span> is Our Solution
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                At ELDE TECH SOLUTION, we turn your ideas into powerful, reliable, and secure software. From cutting-edge apps to robust systems, we build the technology that drives your business forward.
+            </p>
+            <a href="#contact" class="inline-block bg-blue-600 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                Start a Project
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Our Services</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                We provide a comprehensive range of technology solutions designed to meet the unique needs of your business.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Web & Mobile App Development</h3>
+                    <p class="text-gray-600">We build high-performance, user-friendly websites and mobile applications for iOS and Android that engage your audience.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-desktop"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Desktop App & POS Development</h3>
+                    <p class="text-gray-600">Robust desktop applications and efficient Point of Sale systems to streamline your business operations and inventory management.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-tools"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Software Maintenance</h3>
+                    <p class="text-gray-600">Reliable and proactive maintenance services to ensure your software is always up-to-date, secure, and running smoothly.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Penetration Testing</h3>
+                    <p class="text-gray-600">We rigorously test your systems to identify vulnerabilities and secure them against potential cyber threats, protecting your data and your users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Our Recent Projects</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                Here are a few examples of the work we've done for our clients. Each project is a testament to our commitment to quality and innovation.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=E-commerce+Dashboard" alt="E-commerce Platform Dashboard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-600 text-sm">A full-featured online store with secure payment gateways and a responsive design for mobile shopping.</p>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/600x400/1d4ed8/ffffff?text=Inventory+System+UI" alt="Inventory Management System UI" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Inventory Management System</h3>
+                        <p class="text-gray-600 text-sm">A custom desktop application built for seamless inventory tracking and reporting for a retail business.</p>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/600x400/1d4ed8/ffffff?text=Mobile+POS+App" alt="Mobile POS Application Screen" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Mobile POS Application</h3>
+                        <p class="text-gray-600 text-sm">A modern, secure Point of Sale mobile app that allows staff to process transactions from anywhere in the store.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Meet the Founders</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                ELDE TECH SOLUTION was founded by two passionate scholars with a vision to build innovative technology solutions.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <!-- Founder 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100">
+                    <img src="https://placehold.co/150x150/e2e8f0/718096?text=Delphinus" alt="Delphinus Rubangilana Egidius" class="w-40 h-40 rounded-full mx-auto mb-6 shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Delphinus Rubangilana Egidius</h3>
+                    <p class="text-sm font-medium text-blue-600 mb-4">Co-Founder, Computer Science Scholar</p>
+                    <p class="text-gray-600">
+                        A dedicated scholar of **Bachelor of Computer Science** at Kampala International University in Dar es Salaam,
+                        with a strong foundation in software development and system architecture.
+                    </p>
+                </div>
+                <!-- Founder 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100">
+                    <img src="https://placehold.co/150x150/e2e8f0/718096?text=Elibarick+Maleko" alt="Elibarick Maleko" class="w-40 h-40 rounded-full mx-auto mb-6 shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Elibarick Maleko</h3>
+                    <p class="text-sm font-medium text-blue-600 mb-4">Co-Founder, BIT Scholar</p>
+                    <p class="text-gray-600">
+                        A skilled scholar of **Bachelor of Information Technology** at the same university,
+                        specializing in IT solutions and network security.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get in Touch</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                Ready to build something great? Contact us today to discuss your project.
+            </p>
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg max-w-2xl mx-auto border border-gray-200">
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label for="location" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+                        <input type="text" id="location" name="location" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                    <i class="fab fa-linkedin-in fa-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+            </div>
+            <p class="text-sm">&copy; 2025 ELDE TECH SOLUTION. All Rights Reserved.</p>
+            <p class="mt-2 text-sm">
+                <a href="#" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a> |
+                <a href="#" class="hover:text-blue-400 transition-colors duration-300">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
